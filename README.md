@@ -31,6 +31,13 @@ Command-line installer
 scoop install yarn
 ```
 
+## Chocolatey
+Command-line installer
+
+```powershell
+iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
 PowerShell
 ===================
 ## Modules
