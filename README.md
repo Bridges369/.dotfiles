@@ -1,7 +1,7 @@
 General Requires
 ===================
 ## Git
-(For windows).[](https://git-scm.com/)
+(For windows). [Website](https://git-scm.com/)
 
 * Installer: [here](https://github.com/git-for-windows/git/releases/download/v2.36.1.windows.1/Git-2.36.1-64-bit.exe)
 * Or using [winget tool](https://docs.microsoft.com/en-us/windows/package-manager/winget):
@@ -11,35 +11,35 @@ winget install --id Git.Git -e --source winget
 ```
 
 # Node
-Programming language.[](https://nodejs.org/en/)
+Programming language. [Website](https://nodejs.org/en/)
 
 ```powershell
 winget install OpenJS.NodeJS.LTS
 ```
 
-# Scoop [](https://scoop.sh/)
-Package manager.[](https://scoop.sh/)
+# Scoop
+Package manager. [Website](https://scoop.sh/)
 
 ```powershell
 irm get.scoop.sh | iex
 ```
 
 ## NVM
-Node Version Manager.[](https://github.com/nvm-sh/nvm)
+Node Version Manager. [Website](https://github.com/nvm-sh/nvm)
 
 ```powershell
 scoop install nvm
 ```
 
 ## Yarn
-Package manager.[](https://yarnpkg.com/)
+Package manager. [Website](https://yarnpkg.com/)
 
 ```powershell
 scoop install yarn
 ```
 
 ## Chocolatey
-Package manager for Windows.[](https://chocolatey.org/)
+Package manager for Windows. [Website](https://chocolatey.org/)
 
 ```powershell
 iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
