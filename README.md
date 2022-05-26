@@ -56,6 +56,10 @@ Local:
 
 PowerShell
 ===================
+## Instalation
+
+<https://github.com/PowerShell/PowerShell/releases/download/v7.2.4/PowerShell-7.2.4-win-x64.msi>
+
 ## Modules
 
 ### Terminal Icons
@@ -87,7 +91,6 @@ Neovim
 ===================
 ## Requires
 
-* Git
 * Ruby
 
 Run:
@@ -116,6 +119,12 @@ Run:
 cpanm -n Neovim::Ext
 ```
 
+## Instalation
+
+```powershell
+winget install Neovim.Neovim
+```
+
 ## Plugins
 
 Install `Vim-Plug` before, for using Neovim plugins:
@@ -130,3 +139,9 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
 
 Oh-My-Posh
 ===================
+
+## Instalation
+
+```powershell
+winget install oh-my-posh
+```
