@@ -49,6 +49,7 @@ Windows Terminal
 ===================
 
 **Config file:** settings.json
+
 **Local:**
 ```powershell
 $terminal_profile # view in powershell dotfile
@@ -60,6 +61,7 @@ PowerShell
 ===================
 
 **Config File:** Microsoft.PowerShell_profile.ps1
+
 **Local:**
 ```powershell
 $ENV:CurrentUser\Documents\PowerShell\Microsoft.PowerShell_profile.ps1` (`$PROFILE`)
@@ -98,6 +100,7 @@ Neovim
 ===================
 
 **Config file:** init.vim
+
 **Local:**
 ```powershell
 $nvim_profile
@@ -154,6 +157,7 @@ Oh-My-Posh
 ===================
 
 **Config file:** my_schema1.json
+
 **Local:**
 ```powershell
 $themes\my_schema1.json
