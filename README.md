@@ -47,16 +47,25 @@ iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocola
 
 Windows Terminal
 ===================
-Config file: settings.json
 
-Local:
+**Config file:** settings.json
+**Local:**
 ```powershell
-"$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json""
+$terminal_profile # view in powershell dotfile
 ```
+
+
 
 PowerShell
 ===================
-## Instalation
+
+**Config File:** Microsoft.PowerShell_profile.ps1
+**Local:**
+```powershell
+$ENV:CurrentUser\Documents\PowerShell\Microsoft.PowerShell_profile.ps1` (`$PROFILE`)
+```
+
+## PowerShell Instalation
 
 <https://github.com/PowerShell/PowerShell/releases/download/v7.2.4/PowerShell-7.2.4-win-x64.msi>
 
@@ -83,12 +92,17 @@ Autocompletion.
 Install-Module -Name PSReadLine -AllowPrerelease -Scoop CurrentUser -Force -SkipPublisherCheck
 ```
 
-## Location Files
 
-PowerShell dotfile is located in `$ENV:CurrentUser\Documents\PowerShell\Microsoft.PowerShell_profile.ps1` (`$PROFILE`)
 
 Neovim
 ===================
+
+**Config file:** init.vim
+**Local:**
+```powershell
+$nvim_profile
+```
+
 ## Requires
 
 * Ruby
@@ -119,7 +133,7 @@ Run:
 cpanm -n Neovim::Ext
 ```
 
-## Instalation
+## Neovim Instalation
 
 ```powershell
 winget install Neovim.Neovim
@@ -135,12 +149,17 @@ iwr -useb https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim |`
 ```
 
 
-## Location Files
 
 Oh-My-Posh
 ===================
 
-## Instalation
+**Config file:** my_schema1.json
+**Local:**
+```powershell
+$themes\my_schema1.json
+```
+
+## Oh-My-Posh Instalation
 
 ```powershell
 winget install oh-my-posh
