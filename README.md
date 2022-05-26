@@ -1,7 +1,7 @@
 General Requires
 ===================
 ## Git
-(For windows)
+(For windows).[](https://git-scm.com/)
 
 * Installer: [here](https://github.com/git-for-windows/git/releases/download/v2.36.1.windows.1/Git-2.36.1-64-bit.exe)
 * Or using [winget tool](https://docs.microsoft.com/en-us/windows/package-manager/winget):
@@ -10,32 +10,48 @@ General Requires
 winget install --id Git.Git -e --source winget
 ```
 
-# Scoop [ ](https://scoop.sh/)
-Command-line installer
+# Node
+Programming language.[](https://nodejs.org/en/)
+
+```powershell
+winget install OpenJS.NodeJS.LTS
+```
+
+# Scoop [](https://scoop.sh/)
+Package manager.[](https://scoop.sh/)
 
 ```powershell
 irm get.scoop.sh | iex
 ```
 
-## Node
-Language and installer
+## NVM
+Node Version Manager.[](https://github.com/nvm-sh/nvm)
 
 ```powershell
 scoop install nvm
 ```
 
 ## Yarn
-Command-line installer
+Package manager.[](https://yarnpkg.com/)
 
 ```powershell
 scoop install yarn
 ```
 
 ## Chocolatey
-Command-line installer
+Package manager for Windows.[](https://chocolatey.org/)
 
 ```powershell
 iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+Windows Terminal
+===================
+Config file: settings.json
+
+Local:
+```powershell
+"$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json""
 ```
 
 PowerShell
