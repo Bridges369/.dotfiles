@@ -64,7 +64,7 @@ PowerShell
 
 **Local:**
 ```powershell
-$ENV:CurrentUser\Documents\PowerShell\Microsoft.PowerShell_profile.ps1` (`$PROFILE`)
+$ENV:CurrentUser\Documents\PowerShell\Microsoft.PowerShell_profile.ps1
 ```
 
 ## PowerShell Instalation
@@ -108,30 +108,26 @@ $nvim_profile
 
 ## Requires
 
-* Ruby
+### Ruby
 
-Run:
 ```powershell
 gem install neovim
 ```
 
-* Node
+### Node
 
-Run:
 ```powershell
 npm install -g neovim
 ```
 
-* Python
+### Python
 
-Run:
 ```powershell
 python3 -m pip install --user --upgrade pynvim
 ```
 
-* Perl
+### Perl
 
-Run:
 ```powershell
 cpanm -n Neovim::Ext
 ```
