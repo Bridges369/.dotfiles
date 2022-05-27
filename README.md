@@ -18,12 +18,10 @@ winget install --id Git.Git -e --source winget
 
 Run this:
 ```powershell
-New-Item -Path $env:CURRENTUSER -Name ".dotfiles" -ItemType Directory
-Set-Location ~\.dotfiles
-git init
+Set-Location $env:CURRENTUSER
 git clone https://github.com/Bridges369/dotfiles.git
 ```
 
-# Map dotfiles to ~\.dotfiles
+# Map dotfiles to ~\\.dotfiles
 
 Run the script `mapping.ps1`
