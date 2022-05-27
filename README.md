@@ -8,7 +8,6 @@ Set-ExecutionPolicy `
     -Scope CurrentUser `
     -Force
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol `
-    -bor 3072
 ```
 
 You must be install [Git](https://git-scm.com/) before anything:
@@ -24,4 +23,4 @@ git clone https://github.com/Bridges369/dotfiles.git
 
 # Map dotfiles to ~\\.dotfiles
 
-Run the script `mapping.ps1`
+Run the script `mapping.ps1` after execute the previous steps.
