@@ -29,8 +29,8 @@ Run the script `mapping.ps1` after execute the previous steps.
 |    file      | map to |  dotfile    |
 | :--------    | :----- |    ---:     |
 | ~\\.gitconfig | ~\\.dotfiles\\.gitconfig | Git          |
-| ~\\Documents\PowerShell\Microsoft.PowerShell_profile.ps1 | ~\\.dotfiles\\.pwsh | PowerShell   |
-| ~\\AppData\Local\Packages\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\LocalState\settings | ~\\.dotfiles\\.wterm | Win Terminal |
-| ~\\AppData\Local\nvim\init.vim | ~\\.dotfiles\\.nvim | Neovim       |
-| ~\\AppData\Local\Programs\oh-my-posh\themes\my_schema1.json | ~\\.dotfiles\\.posh | Oh-My-Posh   |
+| ~\\Documents\PowerShell\Microsoft.PowerShell_profile.ps1 | ~\\.dotfiles\\.profile.ps1 | PowerShell   |
+| ~\\AppData\Local\Packages\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\LocalState\settings | ~\\.dotfiles\\.wterm.json | Win Terminal |
+| ~\\AppData\Local\nvim\init.vim | ~\\.dotfiles\\.vim | Neovim       |
+| ~\\AppData\Local\Programs\oh-my-posh\themes\my_schema1.json | ~\\.dotfiles\\.posh.json | Oh-My-Posh   |
 
