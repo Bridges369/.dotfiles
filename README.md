@@ -24,8 +24,6 @@ git clone https://github.com/Bridges369/.dotfiles.git
 # Map dotfiles to ~\\.dotfiles
 
 Run script `ambient\mapping.ps1` as administrator after execute the previous steps.
-=======
-Run script `mapping.ps1` as administrator after execute the previous steps.
 
 **Mapped files:**
 |    file      | map to |  dotfile    |
@@ -41,4 +39,3 @@ Run script `mapping.ps1` as administrator after execute the previous steps.
 # Preparating PowerShell ambient
 
 Run as administrator the script `ambient\install-modules.ps1`.
-=======
