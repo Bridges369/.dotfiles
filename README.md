@@ -23,11 +23,9 @@ git clone https://github.com/Bridges369/.dotfiles.git
 
 # Map dotfiles to ~\\.dotfiles
 
-<<<<<<< HEAD
 Run script `ambient\mapping.ps1` as administrator after execute the previous steps.
 =======
 Run script `mapping.ps1` as administrator after execute the previous steps.
->>>>>>> c6a0d41502bd551b8b9cb57941e2961bef127e37
 
 **Mapped files:**
 |    file      | map to |  dotfile    |
@@ -38,11 +36,9 @@ Run script `mapping.ps1` as administrator after execute the previous steps.
 | ~\\AppData\Local\nvim\init.vim | ~\\.dotfiles\\.vim | Neovim       |
 | ~\\AppData\Local\Programs\oh-my-posh\themes\my_schema1.json | ~\\.dotfiles\\.posh.json | Oh-My-Posh   |
 
-<<<<<<< HEAD
 
 
 # Preparating PowerShell ambient
 
 Run as administrator the script `ambient\install-modules.ps1`.
 =======
->>>>>>> c6a0d41502bd551b8b9cb57941e2961bef127e37
