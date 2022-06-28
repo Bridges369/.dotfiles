@@ -82,14 +82,14 @@ let g:DevIconsDefaultFolderOpenSymbol = ''
 " ______ Git-Plugin __________________________________
 let g:NERDTreeGitStatusUseNerdFonts = 1
 let g:NERDTreeGitStatusIndicatorMapCustom = {
-  \ 'Modified'  :'',
-  \ 'Staged'    :'',
+  \ 'Modified'  :'',
+  \ 'Staged'    :'',
   \ 'Untracked' :'留',
   \ 'Renamed'   :'',
   \ 'Unmerged'  :'',
   \ 'Deleted'   :'',
   \ 'Dirty'     :'',
-  \ 'Ignored'   :'ﰸ',
+  \ 'Ignored'   :'☒',
   \ 'Clean'     :'✔︎',
   \ 'Unknown'   :'?',
   \ }
@@ -100,6 +100,12 @@ let g:WebDevIconsDisableDefaultFileSymbolColorFromNERDTreeFile = 1
 nmap <C-a> :NERDTreeToggle<CR>
 nmap <C-t> :NERDTreeToggle<CR>
 nmap <C-A-f> :NERDTreeFind<CR>
+" ____ Buffers _______________________________________
+nmap ta :badd new buffer
+nmap td :bdelete<CR>
+nmap tl :buffer #<CR>
+nmap tr :bprevious<CR>
+nmap ty :bnext<CR>
 " ____ Navigation ____________________________________
 nmap <A-c> :bNext<CR>
 nmap <A-d> :bdelete<CR>
@@ -108,16 +114,21 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 " ____ File __________________________________________
-nmap <C-w>w :w!<CR>
-nmap <C-q> :q!<CR>
-nmap <C-w>q :wq!<CR>
-map <S-tab> <tab>
+map <C-w>w :w!<CR>
+map <C-q> :q!<CR>
+map <C-w>q :wq!<CR>
 " ______ Manage ______________________________________
 
 " __ Lets ____________________________________________
 " let g:SuperTabDefaultCompletionType = "<C-n>"
 " __ autocmd _________________________________________
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
+augroup autosave
+    autocmd!
+    autocmd BufRead * if &filetype == "" | setlocal ft=text | endif
+    autocmd FileType * autocmd TextChangedI <buffer> if &readonly == 0 | silent write | endif
+augroup END
 " __ ALE _____________________________________________
 let g:ale_linters = {
   \ 'javascript': ['eslint'],
