@@ -106,6 +106,8 @@ nmap td :bdelete<CR>
 nmap tl :buffer #<CR>
 nmap tr :bprevious<CR>
 nmap ty :bnext<CR>
+" ___ Tabs ___________________________________________
+nmap ,a :tabe<CR>
 " ____ Navigation ____________________________________
 nmap <A-c> :bNext<CR>
 nmap <A-d> :bdelete<CR>
@@ -117,8 +119,6 @@ map <C-l> <C-w>l
 map <C-w>w :w!<CR>
 map <C-q> :q!<CR>
 map <C-w>q :wq!<CR>
-" ______ Manage ______________________________________
-
 " __ Lets ____________________________________________
 " let g:SuperTabDefaultCompletionType = "<C-n>"
 " __ autocmd _________________________________________
