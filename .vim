@@ -139,6 +139,7 @@ augroup autosave
     autocmd!
     autocmd BufRead * if &filetype == "" | setlocal ft=text | endif
     autocmd FileType * autocmd TextChangedI <buffer> if &readonly == 0 | silent write | endif
+    "                         ^ TextChanged,InsertLeave,TextChangedI, ...
 augroup END
 
 function! HighlightWordUnderCursor()
