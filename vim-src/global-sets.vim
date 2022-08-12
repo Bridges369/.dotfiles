@@ -26,6 +26,9 @@ set mouse=a          " Enable mouse support
 filetype on          " Detect and set the filetype option and trigger the FileType Event
 filetype plugin on   " Load the plugin file for the file type, if any
 filetype indent on   " Load the indent file for the file type, if any
+set spelllang=en_us,pt_br " spell languages
+set spellsuggest=best,9 " Show nine spell checking candidates at most
+set spell
 " COC
 set nobackup
 set nowritebackup

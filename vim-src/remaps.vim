@@ -10,22 +10,24 @@ nmap ty :bnext<CR>
 " Tabs
 nmap ,a :tabe<CR>
 " Navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+nmap <S-h> <C-w>h
+nmap <S-j> <C-w>j
+nmap <S-k> <C-w>k
+nmap <S-l> <C-w>l
 " File
-nmap <C-w> :w!<CR>
-nmap <C-q> :q!<CR>
+nmap <S-w> :w!<CR>
+nmap <S-q> :q!<CR>
 " Edting
 nmap op o<Esc>k
 nmap oi O<Esc>j
 nmap oo A<CR>
-nmap <M-Right> :move 1<CR>
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
 inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
+" Spell
+nnoremap <silent> <A-S-s> :set spell!<cr>
+inoremap <silent> <A-S-s> <C-O>:set spell!<cr>
 " Terminal
 nmap te :te<CR>
 if (has("nvim"))

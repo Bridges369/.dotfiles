@@ -1,5 +1,5 @@
-let g:python3_host_prog = 'C:/Python310/python.exe' " python hos provider
-let g:coc_global_extensions = [ 'coc-snippets', 'coc-pairs', 'coc-solargraph', 'coc-prettier' ] " coc extensions
+let g:python3_host_prog = 'C:/Python310/python.exe' " python host provider
+let g:coc_global_extensions = [ 'coc-snippets', 'coc-pairs', 'coc-solargraph', 'coc-prettier', 'coc-rust-analyzer' ] " coc extensions
 " AirLine
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
@@ -42,3 +42,7 @@ let g:ale_sign_error = '窱'
 let g:ale_sign_warning = ''
 " Snippets
 let g:coc_snippet_next = '<tab>'
+" Rust
+let g:rustfmt_autosave = 1
+let g:rustfmt_emit_files = 1
+let g:rustfmt_fail_silently = 0
