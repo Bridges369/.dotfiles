@@ -1,16 +1,16 @@
 vim.cmd([[
 let g:python3_host_prog = 'C:/Python310/python.exe' " python host provider
 let g:coc_global_extensions = [ 'coc-snippets', 'coc-pairs', 'coc-solargraph', 'coc-prettier', 'coc-rust-analyzer' ] " coc extensions
-" AirLine
+" >> AirLine
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-" NERDTree
+" >> NERDTree
 let g:NERDTreeDirArrowExpandable = ''
 let g:NERDTreeDirArrowCollapsible = ''
-"" - Git
+" -->> Git
 let g:NERDTreeGitStatusUseNerdFonts = 1
 let g:NERDTreeGitStatusIndicatorMapCustom = {
   \ 'Modified'  :'',
@@ -24,7 +24,7 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
   \ 'Clean'     :'✔︎',
   \ 'Unknown'   :'?',
   \ }
-" Devicons
+" >> Devicons
 let g:DevIconsEnableFoldersOpenClose = 1
 let g:WebDevIconsUnicodeDecorateFileNodesDefaultSymbol = ''
 let g:WebDevIconsUnicodeDecorateFolderNodesDefaultSymbol = ''
@@ -32,7 +32,7 @@ let g:DevIconsDefaultFolderOpenSymbol = ''
 " Syntax-Highlight
 let g:WebDevIconsDisableDefaultFolderSymbolColorFromNERDTreeDir = 1
 let g:WebDevIconsDisableDefaultFileSymbolColorFromNERDTreeFile = 1
-" ALE
+" >> ALE
 let g:ale_linters = {
   \ 'ruby': ['eslint'],
   \}
@@ -43,8 +43,19 @@ let g:ale_sign_error = '窱'
 let g:ale_sign_warning = ''
 " Snippets
 let g:coc_snippet_next = '<tab>'
-" Rust
+" >> Rust
 let g:rustfmt_autosave = 1
 let g:rustfmt_emit_files = 1
 let g:rustfmt_fail_silently = 0
+" >> Git
+" -->> Use fontawesome icons as signs
+let g:gitgutter_sign_added = '▐'      " def: '+'
+let g:gitgutter_sign_modified = '▐'   " def: '>'
+let g:gitgutter_sign_removed = '▐'    " def: '-'
+let g:gitgutter_sign_removed_first_line = '▐' " def: '^'
+let g:gitgutter_sign_modified_removed = '▐'   " def: '<'
+
+let g:gitgutter_override_sign_column_highlight = 1
+highlight SignColumn guibg=bold
+" highlight SignColumn ctermbg=
 ]])
