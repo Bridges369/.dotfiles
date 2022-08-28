@@ -13,3 +13,5 @@ New-Item -Path "C:$env:HOMEPATH\AppData\Local\nvim\init.lua" -ItemType SymbolicL
 # oh-my-posh
 New-Item -Path "C:$env:HOMEPATH\Programs\oh-my-posh\themes\my_schema1.json" -ItemType SymbolicLink -Target "C:$env:HOMEPATH\.dotfiles\.posh.json" -Force
 
+# Winfetch
+New-Item -Path "~\.config\winfetch\config.ps1" -ItemType SymbolicLink -Target "~\.dotfiles\.winf.ps1" -Force
