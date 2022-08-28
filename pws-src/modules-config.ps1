@@ -4,7 +4,7 @@ Import-Module posh-git
 # { PSReadLine }
 $PSReadLineOptionsGeneral = @{
   PredictionSource = "History"
-  EditMode = "Emacs"
+  EditMode = "vi"
   HistoryNoDuplicates = $true
   HistorySearchCursorMovesToEnd = $true
   PredictionViewStyle = "ListView"
@@ -22,5 +22,3 @@ $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
-# { Edit Mode }
-Set-PSReadlineOption -EditMode vi
