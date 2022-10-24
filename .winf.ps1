@@ -1,21 +1,3 @@
-# ===== WINFETCH CONFIGURATION =====
-
-$image = "~/cat.png"
-# $noimage = $true
-
-# Display image using ASCII characters
-# $ascii = $true
-# Set the version of Windows to derive the logo from.
-$logo = "Microsoft"
-# Specify width for image/logo
-$imgwidth = 16
-# Make the logo blink
-$blink = $true
-
-# Display all built-in info segments.
-# $all = $true
-
-
 # { CUSTOM SEGMENTS }
 # Add a custom info line
 function info_custom_time {
@@ -32,16 +14,6 @@ function info_custom_dashes {
         content = "`u{254D}" * $length
     }
 }
-
-# Configure which disks are shown
-# $ShowDisks = @("C:", "D:")
-# Show all available disks
-# $ShowDisks = @("*")
-
-# Configure which package managers are shown
-# disabling unused ones will improve speed
-# $ShowPkgs = @("winget", "scoop", "choco")
-
 # Use the following option to specify custom package managers.
 # Create a function with that name as suffix, and which returns
 # the number of packages. Two examples are shown here:
@@ -53,22 +25,35 @@ function info_custom_dashes {
 #     return (just-install list).Length
 # }
 
-
-# { INFO STYLE }
+# { SETS }
+# # Set the version of Windows to derive the logo from.
+$logo = "Microsoft"
+$image = "~/logo4.png"
+$imgwidth = 32
+$noimage = $false
 # Configure how to show info for levels
-# Default is for text only.
-# 'bar' is for bar only.
-# 'textbar' is for text + bar.
-# 'bartext' is for bar + text.
 # $cpustyle = 'bar'
-$memorystyle = 'bar'
-$diskstyle = 'bar'
+$memorystyle = 'bartext'
+$diskstyle = 'bartext'
 $batterystyle = 'bartext'
+# Configure which package managers are shown
+# disabling unused ones will improve speed
+# $ShowPkgs = @("winget", "scoop", "choco")
+# Configure which disks are shown
+# $ShowDisks = @("C:", "D:")
+# Show all available disks
+# $ShowDisks = @("*")
 
 
-# Remove the '#' from any of the lines in
-# the following to **enable** their output.
+# { ENABLE }
+# Make the logo blink
+$blink = $true
+# Display all built-in info segments.
+# $all = $true
+# Display image using ASCII characters
+# $ascii = $true
 
+# { ORDER SEGMENTS }
 @(
     "title"
     "custom_dashes"
@@ -79,8 +64,8 @@ $batterystyle = 'bartext'
     # "motherboard"
     # "custom_time"  # use custom info line
     # "uptime"
-    "ps_pkgs"  # takes some time
-    "pkgs"
+    # "ps_pkgs"  # takes some time
+    # "pkgs"
     "pwsh"
     # "resolution"
     "terminal"
@@ -88,11 +73,11 @@ $batterystyle = 'bartext'
     # "cpu"
     # "gpu"
     # "cpu_usage"  # takes some time
-    "memory"
-    "disk"
+    # "memory"
+    # "disk"
     "battery"
     # "locale"
-    "weather"
+    # "weather"
     # "local_ip"
     # "public_ip"
     # "blank"
