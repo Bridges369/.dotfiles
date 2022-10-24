@@ -10,3 +10,4 @@ $src_ = "$HOME/.dotfiles/pws-src"
 # {{ Play cmd }}
 oh-my-posh --init --shell pwsh --config $themes\my_schema1.json | Invoke-Expression
 Clear-Host
+winfetch
