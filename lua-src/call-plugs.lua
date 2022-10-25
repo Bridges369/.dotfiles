@@ -28,5 +28,7 @@ call plug#begin()
   Plug 'nvim-telescope/telescope.nvim'
 "{{ Git }}
   Plug 'airblade/vim-gitgutter'
+"{{ JSON }}
+   " Plug 'neoclide/jsonc.vim' " json sintaxhiglight comment
 call plug#end()
 ]])

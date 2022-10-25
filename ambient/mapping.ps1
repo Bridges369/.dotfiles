@@ -15,3 +15,6 @@ New-Item -Path "C:$env:HOMEPATH\Programs\oh-my-posh\themes\my_schema1.json" -Ite
 
 # Winfetch
 New-Item -Path "~\.config\winfetch\config.ps1" -ItemType SymbolicLink -Target "~\.dotfiles\.winf.ps1" -Force
+
+# midnight-commander
+New-Item -Path "~\.config\mc\ini" -ItemType SymbolicLink -Target "~\.dotfiles\mcini" -Force

@@ -4,7 +4,7 @@ Import-Module posh-git
 # { PSReadLine }
 $PSReadLineOptionsGeneral = @{
   PredictionSource = "History"
-  EditMode = "emacs"
+  EditMode = "Vi"
   HistoryNoDuplicates = $true
   HistorySearchCursorMovesToEnd = $true
   PredictionViewStyle = "ListView"

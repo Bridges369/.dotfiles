@@ -1,6 +1,6 @@
-function lf     { # get force
-  param([System.String]$path)
-  Get-ChildItem $path -Force}
+# function lf     { # get force
+#   param([System.String]$path)
+#   Get-ChildItem $path -Force}
 function ld     { # get only directories
   param([System.String]$path)
   Get-ChildItem $path -Directory}
