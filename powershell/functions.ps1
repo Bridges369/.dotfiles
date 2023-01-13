@@ -13,7 +13,3 @@ function mksl   { # create and set directory
 function Search { # search in browser
   param([System.String]$source="")
   Start-Process Opera "https://www.google.com.br/search?q=$($source -replace ' ', '+')"}
-function which { # find command path
-  param([system.string]$cmd)
-  get-command -name $cmd -erroraction silentlycontinue |
-    select-object -expandproperty path -erroraction silentlycontinue}
