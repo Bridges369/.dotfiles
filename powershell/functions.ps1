@@ -10,9 +10,6 @@ function lfl    { # get only files
 function mksl   { # create and set directory
   param([System.String]$path)
   mkdir $path; Set-Location $path}
-function File   { # create file
-  param([System.String]$path)
-  New-Item $path -ItemType File -Force} # create file
 function Search { # search in browser
   param([System.String]$source="")
   Start-Process Opera "https://www.google.com.br/search?q=$($source -replace ' ', '+')"}
