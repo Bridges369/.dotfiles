@@ -1,4 +1,4 @@
-$src_ = "$HOME/.dotfiles/pws-src"
+$src_ = "$HOME/.dotfiles/powershell"
 # {{ Envrioments }}
 . $src_/env.ps1
 # {{ Modules }}
@@ -8,6 +8,6 @@ $src_ = "$HOME/.dotfiles/pws-src"
 # {{ Functions }}
 . $src_/functions.ps1
 # {{ Play cmd }}
-oh-my-posh --init --shell pwsh --config $themes\my_schema1.json | Invoke-Expression
+oh-my-posh --init --shell pwsh --config "$env:USERPROFILE\.dotfiles\posh.json" | Invoke-Expression
 Clear-Host
 winfetch

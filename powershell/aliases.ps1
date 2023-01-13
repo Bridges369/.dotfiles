@@ -6,7 +6,8 @@ Set-Alias wluiza wlua
 Set-Alias ivh Invoke-History
 Set-Alias r Ruby
 Set-Alias i irb
-Set-Alias v nvim
+Set-Alias nvim C:\tools\neovim\nvim-win64\bin\nvim.exe
+Set-Alias v C:\tools\neovim\nvim-win64\bin\nvim.exe
 Set-Alias g git
 Set-Alias grep findstr
 Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
