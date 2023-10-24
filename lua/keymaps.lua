@@ -37,9 +37,9 @@ keymap("n", "bp", ":bprevious<CR>", opts)
 -- Tab navigation
 keymap("n", "ta", "tabnew<CR>", opts)
 keymap("n", "td", "tabclose<CR>", opts)
--- keymap("n", "tl", ":tab")
 keymap("n", "tn", ":tabnext<CR>", opts)
 keymap("n", "tp", ":tabprevious<CR>", opts)
+-- keymap("n", "tl", ":tab")
 
 -- Resize window
 keymap("n", "<C-Up>", ":resize +1<CR>", opts)
@@ -58,14 +58,21 @@ keymap("n", "<A-k>", ":m .-2<CR>==", opts)
 keymap("n", "<S-Tab>", "<<", opts)
 keymap("n", "<Tab>", ">>", opts)
 
+-- NvimTree
+keymap("n", "<Leader>t", ":NvimTreeToggle<CR>", opts)
 
+-- Get a new GUID
+keymap("n", "<Leader>g", 
+  ":!pwsh -NoProfile -NoLogo -Command \"'(New-Guid).ToString() | Clip '\"<CR><CR>", opts)
 
 -- INSERT -- 
 -- Move lines
 keymap("i", "<A-j>", "<Esc>:m .+1<CR>==gi", opts)
 keymap("i", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
-
+-- Esc
+keymap("i", "kl", "<Esc>", opts)
+keymap("i", "lk", "<Esc>", opts)
 
 -- VISUAL --
 -- Fix paste
