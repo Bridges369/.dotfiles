@@ -48,7 +48,15 @@
         {
           "foreground": "#88c0d0",
           "properties": {
-            "style": "full"
+            "folder_icon": "",
+            "style": "full",
+            "max_depth": 4,
+            "mapped_locations_enabled": true,
+            "mapped_locations": {
+              "C:\\Users\\55549.SAMSUNG-BOOK\\AppData\\Local\\Packages\\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\": "<#B48EAD>Minecraft: Preview</><#5e81ac>]</> <#D8DEE9></> <#5e81ac>[</>",
+              "C:\\Users\\55549.SAMSUNG-BOOK\\AppData\\Local\\Packages\\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_behavior_packs\\": "<#B48EAD>Minecraft: Preview</><#5e81ac>] \ue602 [</>Development Behaviors<#5e81ac>]</> <#D8DEE9></> <#5e81ac>[</>",
+              "C:\\Users\\55549.SAMSUNG-BOOK\\AppData\\Local\\Packages\\Microsoft.MinecraftWindowsBeta_8wekyb3d8bbwe\\LocalState\\games\\com.mojang\\development_resource_packs\\": "<#B48EAD>Minecraft: Preview</><#5e81ac>] \ue602 [</>Development Resources<#5e81ac>]</> <#D8DEE9></> <#5e81ac>[</>"
+            }
           },
           "style": "plain",
           "template": "<#5e81ac>\u2501[</>{{ .Path }}<#5e81ac>]</>",

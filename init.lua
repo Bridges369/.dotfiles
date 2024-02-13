@@ -14,9 +14,11 @@ require "lsp.mason"
 -- {{ PLUGINS }}
 require "plugins.airline"
 require "plugins.telescope"
-require "plugins.treesitter"
 require "plugins.cmp"
 require "plugins.colorizer"
 require "plugins.autopairs"
 require "plugins.comment"
 require "plugins.git"
+require "plugins.mcfunction"
+require "plugins.nvim-tree"; require'nvim-tree'.setup()
+require "plugins.treesitter"

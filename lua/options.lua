@@ -21,6 +21,8 @@ local options = {
   mouse = "a",
   scrolloff = 9,                -- minimum number of lines to keep above ande below the cursor
   -- display
+  wrap = true,                  -- split lines
+  foldlevelstart = 99,           -- always expand lines
   number = true,                -- set number lines
   relativenumber = false,       -- set relative numbered lines
   signcolumn = "yes",           -- always show the sign column, otherwise it would shift the text each time
@@ -36,9 +38,12 @@ local options = {
 	expandtab = true,             -- convert tabs to spaces
 	smarttab = true,
 	smartindent = true,           -- make identing smarter again
+  swapfile = false,
 }
 for k,v in pairs(options) do
 	vim.opt[k] = v
 end
 
 vim.opt.shortmess:append "c"
+
+vim.cmd("autocmd BufRead,BufNewFile *.json set filetype=jsonc")

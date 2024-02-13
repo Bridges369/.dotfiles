@@ -49,25 +49,39 @@ return packer.startup(function(use)
   -- {{ DISPLAY }}
   use "vim-airline/vim-airline" -- statusbar
   use "ryanoasis/vim-devicons" -- file/directories icons
-  use "nvim-tree/nvim-web-devicons"
 
   -- {{ USUAL }}
   use "numToStr/Comment.nvim"
-  use { "folke/todo-comments.nvim",
-      requires = "nvim-lua/plenary.nvim", }
-
+  use {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim", 
+  }
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    },
+  }
   -- {{ THEME }}
   use "arcticicestudio/nord-vim"
   use "vim-airline/vim-airline-themes"
-  use {"nvim-treesitter/nvim-treesitter", run = ":TSUpdate"} -- highlight
+  use {
+      'nvim-treesitter/nvim-treesitter',
+      run = function()
+          local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+          ts_update()
+      end,
+  }
   use "HiPhish/nvim-ts-rainbow2" -- color pairs
   use "norcalli/nvim-colorizer.lua" -- highlight color names
+  use "shougo/vinarise.vim"
 
   -- {{ LSP }}
   use "neovim/nvim-lspconfig"
   use "williamboman/mason-lspconfig.nvim"
   use "williamboman/mason.nvim" -- LSP installer
   use "jose-elias-alvarez/null-ls.nvim" -- LSP diagnostics and code actions
+  use "rubixninja314/vim-mcfunction" -- mcfunction sintax highlight
 
   -- {{ COMPLETION }}
   use "hrsh7th/nvim-cmp" -- The completion plugin

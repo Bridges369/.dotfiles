@@ -1,3 +1,5 @@
+$Env:USERNAME = "Bridges369"
+$TEMP = $Env:TEMP
 [System.String]$themes = "$env:UserProfile\AppData\Local\Programs\oh-my-posh\themes"
 [System.String]$nvim_profile = "$env:UserProfile\AppData\Local\nvim\init.vim"
 [System.String]$terminal_profile = "$env:UserProfile\AppData\Local\Packages\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\LocalState\settings.json"

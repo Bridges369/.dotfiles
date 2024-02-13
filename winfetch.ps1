@@ -28,8 +28,8 @@ function info_custom_dashes {
 # { SETS }
 # # Set the version of Windows to derive the logo from.
 $logo = "Microsoft"
-$image = "~/logo4.png"
-$imgwidth = 32
+$image = "~\.dotfiles\winfetch-logo.png"
+$imgwidth = 32 # 32
 $noimage = $false
 # Configure how to show info for levels
 # $cpustyle = 'bar'

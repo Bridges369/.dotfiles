@@ -10,4 +10,4 @@ $src_ = "$HOME/.dotfiles/powershell"
 # {{ Play cmd }}
 oh-my-posh --init --shell pwsh --config "$env:USERPROFILE\.dotfiles\posh.json" | Invoke-Expression
 Clear-Host
-winfetch
+# winfetch

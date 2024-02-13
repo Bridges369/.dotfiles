@@ -7,3 +7,4 @@ require("lspconfig").jsonls.setup {
   capabilities = capabilities,
   filetypes = { "json", "jsonc" },
 }
+
