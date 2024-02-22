@@ -3,26 +3,30 @@
 
 local status_ok, nvim_tree = pcall(require, "nvim-tree")
 if not status_ok then
+    print('error 1')
     return
 end
 
-local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
+local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.configs")
 if not config_status_ok then
+    print('error 2')
     return
 end
 
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
-nvim_tree.setup {
+require'nvim-tree'.setup {
     disable_netrw = true,
     hijack_netrw = true,
+    open_on_setup = true,
+    focus_empity_on_setup = true,
     ignore_ft_on_setup = {
         "startify",
         "dashboard",
         "alpha",
     },
     open_on_tab = false,
-    hijack_cursor = false,
+    hijack_cursor = true,
     update_cwd = true,
     hijack_directories = {
         enable = true,
@@ -30,6 +34,7 @@ nvim_tree.setup {
     },
     diagnostics = {
         enable = true,
+        show_on_dirs = true,
         icons = {
             hint = "",
             info = "",
@@ -48,8 +53,8 @@ nvim_tree.setup {
         timeout = 500,
     },
     view = {
-        width = 30,
-        height = 30,
+        width = 25,
+        -- height = 30,
         hide_root_folder = false,
         side = "left",
         auto_resize = true,
@@ -69,13 +74,19 @@ nvim_tree.setup {
         window_picker = { enable = true },
     },
     renderer = {
+        full_name = true,
+        group_empy = true,
         highlight_git = true,
+        special_files = {},
+        symlink_destination = false,
         root_folder_modifier = ":t",
+        indent_markers = {enable = true},
         icons = {
+            git_placement = "signcolumn",
             show = {
                 file = true,
-                folder = true,
-                folder_arrow = true,
+                folder = false,
+                folder_arrow = false,
                 git = true,
             },
             glyphs = {
@@ -114,7 +125,12 @@ require'nvim-web-devicons'.setup {
     mcfunction = {
       icon = "",
       color = "#5E81AC"
+    },
+    mcmeta = {
+      icon = "",
+      color = "#5E81AC"
     }
+
   };
   -- globally enable different highlight colors per icon (default to true)
   -- if set to false all icons will have the default icon's color
