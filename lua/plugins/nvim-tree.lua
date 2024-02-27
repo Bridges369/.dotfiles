@@ -82,6 +82,11 @@ require'nvim-tree'.setup {
         root_folder_modifier = ":t",
         indent_markers = {enable = true},
         icons = {
+            corner = "└",
+            edge = "│",
+            item = "│",
+            bottom = "─",
+            none = " ",
             git_placement = "signcolumn",
             show = {
                 file = true,
