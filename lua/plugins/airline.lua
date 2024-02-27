@@ -2,7 +2,7 @@ g = vim.g
 
 g["airline#extensions#tabline#enabled"] = 1
 g["airline#extensions#tabline#formatter"] = "unique_tail_improved"
-g["airline_theme"] = "nord"
+-- g["airline_theme"] = "nord"
 g["airline_powerline_fonts"] = 1
 
 

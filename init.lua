@@ -21,6 +21,6 @@ require "plugins.autopairs"
 require "plugins.comment"
 require "plugins.git"
 -- require "plugins.mcfunction"
-require "plugins.nvim-tree"
+require "plugins.nvimtree"
 require'nvim-tree'.setup()
 require "plugins.treesitter"

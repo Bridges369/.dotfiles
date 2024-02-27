@@ -1,0 +1,7 @@
+[font]
+normal = { family = "FiraCode Nerd Font Mono", style="Medium" }
+bold = { family = "FiraCode Nerd Font Mono", style="Bold" }
+italic = { family = "Hasklug NF", style="Medium Italic" }
+# bold_italic = { family = "Hasklug NF", style="Black Italic" }
+
+size = 12

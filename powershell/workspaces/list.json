@@ -1,0 +1,17 @@
+{
+  "workspaces": [
+    {
+      "name": "Minecraft Java",
+      "command": "v .",
+      "path": "C:/Users/Bridges369/AppData/Roaming/.minecraft",
+      "guid": "548418e0-6238-44ad-a535-b80dd58e98da"
+    }, 
+    {
+      "name": "Minecraft Bedrock",
+      "command": "v .",
+      "path": "C:/Users/Bridges369/AppData/Roaming/.minecraft",
+      "guid": "548418e0-6238-44ad-a535-b80dd58e98da"
+    }
+
+  ]
+}

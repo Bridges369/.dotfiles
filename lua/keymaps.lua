@@ -62,7 +62,7 @@ keymap("n", "<Tab>", ">>", opts)
 keymap("n", "<Leader>t", ":NvimTreeToggle<CR>", opts)
 
 -- Get a new GUID
-keymap("n", "<Leader>g", 
+keymap("n", "<Leader>g",
   ":!pwsh -NoProfile -NoLogo -Command \"'(New-Guid).ToString() | Clip '\"<CR><CR>", opts)
 
 -- INSERT -- 

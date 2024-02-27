@@ -1,0 +1,13 @@
+import = [
+  "~/.dotfiles/alacritty/general.toml", # general config
+  "~/.dotfiles/alacritty/env.toml", # variables 
+  "~/.dotfiles/alacritty/window.toml", # window config
+  "~/.dotfiles/alacritty/colors.toml", # terminal theme
+  "~/.dotfiles/alacritty/scrolling.toml", # scrolling config
+  "~/.dotfiles/alacritty/font.toml", # terminal theme
+  "~/.dotfiles/alacritty/selection.toml",
+  "~/.dotfiles/alacritty/cursor.toml",
+  "~/.dotfiles/alacritty/mouse.toml",
+  "~/.dotfiles/alacritty/hints.toml",
+  "~/.dotfiles/alacritty/keyboard.toml",
+]

@@ -7,7 +7,11 @@ $src_ = "$HOME/.dotfiles/powershell"
 . $src_/aliases.ps1
 # {{ Functions }}
 . $src_/functions.ps1
-# {{ Play cmd }}
+# {{ Workspaces }}
+. $src_/workspaces.ps1
+
 oh-my-posh --init --shell pwsh --config "$env:USERPROFILE\.dotfiles\posh.json" | Invoke-Expression
 Clear-Host
-# winfetch
+winfetch
+
+Set-Alias lvim 'C:\Users\Bridges369\.local\bin\lvim.ps1'

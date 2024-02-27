@@ -1,0 +1,4 @@
+# general
+shell = "pwsh"
+working_directory = "C:/Users/Bridges369/"
+live_config_reload = true

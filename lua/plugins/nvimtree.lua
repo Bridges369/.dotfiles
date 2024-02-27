@@ -6,8 +6,7 @@ if not status_ok then
     print('error 1')
     return
 end
-
-local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.configs")
+local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
 if not config_status_ok then
     print('error 2')
     return
@@ -15,7 +14,7 @@ end
 
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
-require'nvim-tree'.setup {
+require('nvim-tree').setup ({
     disable_netrw = true,
     hijack_netrw = true,
     open_on_setup = true,
@@ -80,26 +79,34 @@ require'nvim-tree'.setup {
         special_files = {},
         symlink_destination = false,
         root_folder_modifier = ":t",
-        indent_markers = {enable = true},
-        icons = {
+        indent_markers = {
+          enable = false,
+          inline_arrows = true,
+          icons = {
             corner = "└",
             edge = "│",
             item = "│",
             bottom = "─",
             none = " ",
+          },
+        },
+        padding = " ",
+        icons = {
             git_placement = "signcolumn",
             show = {
                 file = true,
-                folder = false,
-                folder_arrow = false,
+                folder = true,
+                folder_arrow = true,
                 git = true,
             },
             glyphs = {
                 default = "",
+                modified = "●",
+                bookmark = "󰆤",
                 symlink = "",
                 git = {
-                    unstaged = "",
-                    staged = "S",
+                    unstaged = "✗",
+                    staged = "✓",
                     unmerged = "",
                     renamed = "➜",
                     deleted = "",
@@ -108,6 +115,8 @@ require'nvim-tree'.setup {
                 },
                 folder = {
                     default = "",
+                    arrow_closed = "",
+                    arrow_open = "",
                     open = "",
                     empty = "",
                     empty_open = "",
@@ -116,7 +125,7 @@ require'nvim-tree'.setup {
             }
         }
     }
-}
+})
 
 require'nvim-web-devicons'.setup {
   -- your personnal icons can go here (to override)

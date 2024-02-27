@@ -1,0 +1,7 @@
+[window]
+padding = { x = 0, y = 0}
+opacity = 0.9
+decorations = "Full" # allow title and navigation bar
+title = "Alacritty" # window title
+dynamic_title = true # allow applications to change window dynamic_title
+decorations_theme_variant = "Dark"
