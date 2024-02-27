@@ -13,5 +13,3 @@ $src_ = "$HOME/.dotfiles/powershell"
 oh-my-posh --init --shell pwsh --config "$env:USERPROFILE\.dotfiles\posh.json" | Invoke-Expression
 Clear-Host
 winfetch
-
-Set-Alias lvim 'C:\Users\Bridges369\.local\bin\lvim.ps1'
