@@ -6,3 +6,6 @@ Install-Module -Name oh-my-posh -Scope CurrentUser -Force
 Install-Module -Name z -Force
 # autocompletion
 Install-Module -Name PSReadLine -AllowPrerelease -Scope CurrentUser -Force -SkipPublisherCheck
+
+
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")

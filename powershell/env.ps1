@@ -12,7 +12,13 @@ $TEMP = $Env:TEMP
     home="$env:APPDATA\..\Local\Packages\Microsoft.MinecraftUWP_8wekyb3d8bbwe\LocalState\games\com.mojang\"
   };
   java=@{
-    home="C:\Users\Bridges369\AppData\Roaming\.minecraft"
+    home="C:\Users\Bridges369\AppData\Roaming\.minecraft\";
+    saves=@{
+      machine="C:\Users\Bridges369\AppData\Roaming\.minecraft\saves\Machine"
+    };
+    custom=@{
+      minecraft_custom="C:\Users\Bridges369\Games\.minecraft-custom\"
+    }
   }
 }
 [System.String]$HostHistory = "$env:APPDATA\Microsoft\Windows\PowerShell\PSReadLine\$($host.Name)_history.txt"
