@@ -20,7 +20,7 @@ vim.g.maplocalleader = " "
 
 -- TERMINAL --
 keymap("t", "<ESC>", "<C-\\><C-n>", opts) -- exit terminal
-keymap("n", "<Leader>e", ":split<CR>:terminal<CR>", opts)
+keymap("n", "<Leader>e", ":split<CR>:terminal<CR>:res 10<CR>", opts)
 
 -- NORMAL --
 -- Window navigation
