@@ -21,6 +21,9 @@ choco install mingw
 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
 
+Invoke-WebRequest -uri "https://github.com/PowerShell/PowerShell/releases/download/v7.4.1/PowerShell-7.4.1-win-x64.msi" -OutFile "C:\Windows\Temp\powershell.msi"
+Start-Process "C:\Windows\Temp\powershell.msi"
+
 Invoke-WebRequest -uri "https://nodejs.org/dist/v20.11.1/node-v20.11.1-x64.msi" -OutFile "C:\Windows\Temp\node.msi"
 Start-Process "C:\Windows\Temp\node.msi"
 
