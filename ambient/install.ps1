@@ -30,6 +30,9 @@ Start-Process "C:\Windows\Temp\rust.exe"
 Invoke-WebRequest -uri "https://github.com/neovim/neovim/releases/latest/download/nvim-win64.msi" -OutFile "C:\Windows\Temp\nvim.msi"
 Start-Process "C:\Windows\Temp\nvim.msi"
 
+Invoke-WebRequest -uri "https://repo.anaconda.com/archive/Anaconda3-2024.02-1-Windows-x86_64.exe" -OutFile "C:\Windows\Temp\conda.exe"
+Start-Process "C:\Windows\Temp\conda.exe"
+
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
 
 npm install --global yarn
