@@ -18,11 +18,15 @@ vim.g.maplocalleader = " "
 --   command_mode = "c",
 
 
+-- TERMINAL --
+keymap("t", "<ESC>", "<C-\\><C-n>", opts) -- exit terminal
+keymap("n", "<Leader>e", ":split<CR>:terminal<CR>", opts)
+
 -- NORMAL --
 -- Window navigation
 keymap("n", "<S-q>", ":q!<CR>", opts)
 keymap("n", "<S-w>", ":wq<CR>", opts)
-keymap("n", "<C-h>", "<C-w>h", opts) 
+keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
