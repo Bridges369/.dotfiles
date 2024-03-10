@@ -19,6 +19,8 @@ choco install cmake
 choco install nodist
 choco install mingw
 
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
+
 Invoke-WebRequest -uri "https://nodejs.org/dist/v20.11.1/node-v20.11.1-x64.msi" -OutFile "C:\Windows\Temp\node.msi"
 Start-Process "C:\Windows\Temp\node.msi"
 
@@ -28,5 +30,8 @@ Start-Process "C:\Windows\Temp\rust.exe"
 Invoke-WebRequest -uri "https://github.com/neovim/neovim/releases/latest/download/nvim-win64.msi" -OutFile "C:\Windows\Temp\nvim.msi"
 Start-Process "C:\Windows\Temp\nvim.msi"
 
+$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
+
+npm install --global yarn
 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
