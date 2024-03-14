@@ -11,5 +11,5 @@ $src_ = "$HOME/.dotfiles/powershell"
 . $src_/workspaces.ps1
 
 oh-my-posh --init --shell pwsh --config "$env:USERPROFILE\.dotfiles\posh.json" | Invoke-Expression
-Clear-Host
+# Clear-Host
 #winfetch
