@@ -1,7 +1,7 @@
 # install chocolatey
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+#Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 
-$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
+#$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
 
 winget install python
 winget install ffmpeg
@@ -13,11 +13,13 @@ winget install CoreyButler.NVMforWindows
 winget install LuaJIT
 winget install "Lua Language Server"
 winget install RubyInstallerTeam.RubyWithDevKit.3.2
+winget install BurntSushi.ripgrep.MSVC
 
 choco install manimce
 choco install cmake
 choco install nodist
 choco install mingw
+choco install make
 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
 

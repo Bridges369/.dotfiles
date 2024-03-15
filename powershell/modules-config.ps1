@@ -1,6 +1,6 @@
 # { Imports }
 Import-Module Terminal-Icons
-Import-Module posh-git
+# Import-Module posh-git
 # { PSReadLine }
 $PSReadLineOptionsGeneral = @{
   PredictionSource = "History"
