@@ -14,6 +14,7 @@ winget install LuaJIT
 winget install "Lua Language Server"
 winget install RubyInstallerTeam.RubyWithDevKit.3.2
 winget install BurntSushi.ripgrep.MSVC
+winget install Anaconda.Miniconda3
 
 choco install manimce
 choco install cmake

@@ -1,16 +1,8 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
-    "$schema": "https://aka.ms/terminal-profiles-schema",
+    "$schema": "https://aka.ms/terminal-profiles-schema-preview",
     "actions": 
     [
-        {
-            "command": "unbound",
-            "keys": "ctrl+shift+space"
-        },
-        {
-            "command": "unbound",
-            "keys": "ctrl+n"
-        },
         {
             "command": 
             {
@@ -20,15 +12,19 @@
             "keys": "ctrl+c"
         },
         {
+            "command": "unbound",
+            "keys": "ctrl+shift+space"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+n"
+        },
+        {
             "command": "paste",
             "keys": "ctrl+v"
         },
         {
             "command": "openNewTabDropdown"
-        },
-        {
-            "command": "find",
-            "keys": "ctrl+shift+f"
         },
         {
             "command": 
@@ -38,6 +34,10 @@
                 "splitMode": "duplicate"
             },
             "keys": "alt+shift+d"
+        },
+        {
+            "command": "find",
+            "keys": "ctrl+shift+f"
         }
     ],
     "alwaysOnTop": false,
@@ -46,6 +46,12 @@
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "experimental.rendering.forceFullRepaint": true,
     "focusFollowMouse": true,
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
         "defaults": 
@@ -55,7 +61,7 @@
             "font": 
             {
                 "face": "FiraCode Nerd Font Mono",
-                "size": 11,
+                "size": 11.0,
                 "weight": "medium"
             },
             "historySize": 2000,
@@ -90,6 +96,18 @@
                 "hidden": false,
                 "name": "Azure Cloud Shell",
                 "source": "Windows.Terminal.Azure"
+            },
+            {
+                "guid": "{ce716446-99f4-5f4c-97d3-58e1ac4bf991}",
+                "hidden": false,
+                "name": "Developer Command Prompt for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
+            },
+            {
+                "guid": "{9307b1d3-dabf-59ad-ab48-ca9be507c547}",
+                "hidden": false,
+                "name": "Developer PowerShell for VS 2022",
+                "source": "Windows.Terminal.VisualStudio"
             }
         ]
     },
@@ -397,6 +415,7 @@
     ],
     "startOnUserLogin": true,
     "tabWidthMode": "titleLength",
+    "themes": [],
     "trimBlockSelection": true,
     "useAcrylicInTabRow": true,
     "windowingBehavior": "useExisting"
