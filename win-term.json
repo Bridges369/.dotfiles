@@ -1,7 +1,7 @@
 {
     "$help": "https://aka.ms/terminal-documentation",
     "$schema": "https://aka.ms/terminal-profiles-schema",
-    "actions":
+    "actions": 
     [
         {
             "command": "unbound",
@@ -12,7 +12,7 @@
             "keys": "ctrl+n"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "copy",
                 "singleLine": false
@@ -31,7 +31,7 @@
             "keys": "ctrl+shift+f"
         },
         {
-            "command":
+            "command": 
             {
                 "action": "splitPane",
                 "split": "auto",
@@ -46,15 +46,16 @@
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
     "experimental.rendering.forceFullRepaint": true,
     "focusFollowMouse": true,
-    "profiles":
+    "profiles": 
     {
-        "defaults":
+        "defaults": 
         {
             "colorScheme": "nord",
             "cursorShape": "emptyBox",
-            "font":
+            "font": 
             {
-                "face": "Hasklug NF",
+                "face": "FiraCode Nerd Font Mono",
+                "size": 11,
                 "weight": "medium"
             },
             "historySize": 2000,
@@ -64,7 +65,7 @@
             "scrollbarState": "hidden",
             "useAcrylic": true
         },
-        "list":
+        "list": 
         [
             {
                 "commandline": "%SystemRoot%\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
@@ -92,10 +93,9 @@
             }
         ]
     },
-    "schemes":
+    "schemes": 
     [
         {
-            "name": "Campbell",
             "background": "#0C0C0C",
             "black": "#0C0C0C",
             "blue": "#0037DA",
@@ -111,6 +111,7 @@
             "cyan": "#3A96DD",
             "foreground": "#CCCCCC",
             "green": "#13A10E",
+            "name": "Campbell",
             "purple": "#881798",
             "red": "#C50F1F",
             "selectionBackground": "#FFFFFF",

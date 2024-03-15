@@ -5,7 +5,7 @@ New-Item -Path "$env:USERPROFILE\.gitconfig" -ItemType SymbolicLink -Target "$en
 New-Item -Path "$env:USERPROFILE\Documents\PowerShell\Microsoft.PowerShell_profile.ps1" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\powershell.ps1" -Force
 
 # windows terminal | .wterm.json -> win-term.json
-New-Item -Path "$env:USERPROFILE\AppData\Local\Packages\Microsoft.WindowsTerminalPreview_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\win-term.json" -Force
+New-Item -Path "$env:USERPROFILE\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\win-term.json" -Force
 
 # neovim | .lua -> init.lua
 New-Item -Path "$env:USERPROFILE\AppData\Local\nvim\init.lua" -ItemType SymbolicLink -Target "$env:USERPROFILE\.dotfiles\init.lua" -Force
