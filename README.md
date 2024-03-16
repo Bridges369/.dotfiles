@@ -10,9 +10,11 @@ Set-ExecutionPolicy `
 [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol `
 ```
 
-You must be install [Git](https://git-scm.com/) before anything:
+# Install correct PowerShell
 ```
-winget install --id Git.Git -e --source winget
+Invoke-WebRequest -uri "https://github.com/PowerShell/PowerShell/releases/download/v7.4.1/PowerShell-7.4.1-win-x64.msi" -OutFile "C:\Windows\Temp\powershell.msi"
+Start-Process "C:\Windows\Temp\powershell.msi"
+```
 
 # Install winget packages
 ```powershell
