@@ -15,12 +15,14 @@ winget install "Lua Language Server"
 winget install RubyInstallerTeam.RubyWithDevKit.3.2
 winget install BurntSushi.ripgrep.MSVC
 winget install Anaconda.Miniconda3
+winget install sharkdp.fd
 
 choco install manimce
 choco install cmake
 choco install nodist
 choco install mingw
 choco install make
+choco install julia
 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
 
@@ -42,5 +44,11 @@ Start-Process "C:\Windows\Temp\conda.exe"
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
 
 npm install --global yarn
+
+gem install neovim
+
+cargo install fd-find
+cargo install ripgrep
+cargo install tree-sitter-cli
 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
