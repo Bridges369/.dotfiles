@@ -13,6 +13,23 @@ Set-ExecutionPolicy `
 You must be install [Git](https://git-scm.com/) before anything:
 ```
 winget install --id Git.Git -e --source winget
+
+# Install winget packages
+```powershell
+winget install Git.Git
+winget install python
+winget install ffmpeg
+winget install gsudo
+winget install Julialang.Julia.LTS
+winget install GoLang.Go
+winget install MiKTeX.MiKTeX
+winget install CoreyButler.NVMforWindows
+winget install LuaJIT
+winget install "Lua Language Server"
+winget install RubyInstallerTeam.RubyWithDevKit.3.2
+winget install BurntSushi.ripgrep.MSVC
+winget install Anaconda.Miniconda3
+winget install sharkdp.fd
 ```
 
 Run this:
