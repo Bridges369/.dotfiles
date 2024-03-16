@@ -20,7 +20,7 @@ New-Item -Path "$env:USERPROFILE\.config\winfetch\config.ps1" -ItemType Symbolic
 New-Item -Path "~\.config\mc\ini" -ItemType SymbolicLink -Target "~\.dotfiles\mid-cmd.ini" -Force
 
 # LunarVim
-New-Item -Path "~\.local\bin\lvim.ps1" -ItemType SymbolicLink -Target "~\.dotfiles\lvim.ps1" -Force
+# New-Item -Path "~\.local\bin\lvim.ps1" -ItemType SymbolicLink -Target "~\.dotfiles\lvim.ps1" -Force
 
 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
