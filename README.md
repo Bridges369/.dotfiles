@@ -16,6 +16,8 @@ Invoke-WebRequest -uri "https://github.com/PowerShell/PowerShell/releases/downlo
 Start-Process "C:\Windows\Temp\powershell.msi"
 ```
 
+Define PowerShell-7 that default cmd
+
 # Install winget packages
 ```powershell
 winget install Git.Git
