@@ -3,20 +3,6 @@
 
 #$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
 
-winget install python
-winget install ffmpeg
-winget install gsudo
-winget install Julialang.Julia.LTS
-winget install GoLang.Go
-winget install MiKTeX.MiKTeX
-winget install CoreyButler.NVMforWindows
-winget install LuaJIT
-winget install "Lua Language Server"
-winget install RubyInstallerTeam.RubyWithDevKit.3.2
-winget install BurntSushi.ripgrep.MSVC
-winget install Anaconda.Miniconda3
-winget install sharkdp.fd
-
 choco install manimce
 choco install cmake
 choco install nodist
@@ -25,9 +11,6 @@ choco install make
 choco install julia
 
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine")
-
-Invoke-WebRequest -uri "https://github.com/PowerShell/PowerShell/releases/download/v7.4.1/PowerShell-7.4.1-win-x64.msi" -OutFile "C:\Windows\Temp\powershell.msi"
-Start-Process "C:\Windows\Temp\powershell.msi"
 
 Invoke-WebRequest -uri "https://nodejs.org/dist/v20.11.1/node-v20.11.1-x64.msi" -OutFile "C:\Windows\Temp\node.msi"
 Start-Process "C:\Windows\Temp\node.msi"
