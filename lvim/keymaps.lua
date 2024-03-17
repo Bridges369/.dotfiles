@@ -106,5 +106,3 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("t", "<ESC>", "<C-\\><C-n>", opts) -- exit terminal
 keymap("n", "<Leader>t", ":split term://pwsh<CR>:res 10<CR>", opts)
 lvim.keys.normal_mode["<Leader>t"] = ":split term://pwsh<CR>:res 10<CR>"
-
-
