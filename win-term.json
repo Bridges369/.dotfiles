@@ -8,8 +8,7 @@
             {
                 "action": "copy",
                 "singleLine": false
-            },
-            "keys": "ctrl+c"
+            }
         },
         {
             "command": "unbound",
@@ -20,8 +19,15 @@
             "keys": "ctrl+n"
         },
         {
-            "command": "paste",
+            "command": "unbound",
             "keys": "ctrl+v"
+        },
+        {
+            "command": "unbound",
+            "keys": "ctrl+c"
+        },
+        {
+            "command": "paste"
         },
         {
             "command": "openNewTabDropdown"
@@ -56,6 +62,8 @@
     {
         "defaults": 
         {
+            "antialiasingMode": "grayscale",
+            "bellStyle": "window",
             "colorScheme": "nord",
             "cursorShape": "emptyBox",
             "font": 
@@ -67,7 +75,7 @@
             "historySize": 2000,
             "intenseTextStyle": "all",
             "opacity": 71,
-            "padding": "5",
+            "padding": "0",
             "scrollbarState": "hidden",
             "useAcrylic": true
         },

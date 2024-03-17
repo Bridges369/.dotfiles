@@ -1,13 +1,15 @@
 local opts = { noremap = true, silent = true }
-local term_opts = { silent = true }
+-- local term_opts = { silent = true }
 
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
+local normal_key = lvim.keys.normal_mode
 
 --Remap space as leader key
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+lvim.leader = "space"
 
 -- Modes
 --   normal_mode = "n",
@@ -59,11 +61,16 @@ keymap("n", "<S-Tab>", "<<", opts)
 keymap("n", "<Tab>", ">>", opts)
 
 -- NvimTree
-keymap("n", "<Leader>t", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<Leader>e", ":NvimTreeToggle<CR>", opts)
 
 -- Get a new GUID
 keymap("n", "<Leader>g",
   ":!pwsh -NoProfile -NoLogo -Command \"'(New-Guid).ToString() | Clip '\"<CR><CR>", opts)
+
+-- Copy & Paste
+keymap("n", "Y", "e<Right>yb", opts)
+
+
 
 -- INSERT -- 
 -- Move lines
@@ -72,7 +79,10 @@ keymap("i", "<A-k>", "<Esc>:m .-2<CR>==gi", opts)
 
 -- Esc
 keymap("i", "kl", "<Esc>", opts)
-keymap("i", "lk", "<Esc>", opts)
+-- keymap("i", "lk", "<Esc>", opts)
+-- keymap("i", "<C-v>", "<Esc>pi")
+
+
 
 -- VISUAL --
 -- Fix paste
@@ -94,4 +104,7 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 -- TERMINAL --
 keymap("t", "<ESC>", "<C-\\><C-n>", opts) -- exit terminal
-keymap("n", "<Leader>e", ":split term://pwsh<CR>:res 10<CR>", opts)
+keymap("n", "<Leader>t", ":split term://pwsh<CR>:res 10<CR>", opts)
+lvim.keys.normal_mode["<Leader>t"] = ":split term://pwsh<CR>:res 10<CR>"
+
+
