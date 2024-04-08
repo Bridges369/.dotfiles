@@ -10,8 +10,9 @@ Set-Alias i irb
 Set-Alias nvim nvim.exe
 Set-Alias lvim C:\Users\Bridges369\.local\bin\lvim.ps1
 #Set-Alias v C:\tools\neovim\nvim-win64\bin\nvim.exe
-Set-Alias v nvim.exe
+Set-Alias n nvim.exe
 Set-Alias l lvim
+Set-Alias v nvim.exe -u NONE 
 Set-Alias g git
 Set-Alias grep findstr
 Set-Alias tig 'C:\Program Files\Git\usr\bin\tig.exe'
