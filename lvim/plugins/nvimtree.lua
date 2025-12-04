@@ -3,25 +3,12 @@ if not status_ok then
   return
 end
 
-vim.api.nvim_create_autocmd({ 'BufEnter' }, {
-  pattern = 'NvimTree*',
-  callback = function()
-    local api = require('nvim-tree.api')
-    local view = require('nvim-tree.view')
-
-    if not view.is_visible() then
-      api.tree.open()
-    end
-  end,
-})
-
-vim.g.NvimTreeSetup = 0
 
 nvim_tree.setup ({
-  disable_netrw = true,
-  hijack_netrw = true,
-  open_on_tab = false,
-  hijack_cursor = true,
+  -- disable_netrw = true,
+  -- hijack_netrw = true,
+  -- open_on_tab = false,
+  -- hijack_cursor = true,
   diagnostics = {
     enable = true,
     show_on_dirs = true,
@@ -130,11 +117,13 @@ require'nvim-web-devicons'.setup {
       color = "#5E81AC"
     }
 
-  };
+  },
   -- globally enable different highlight colors per icon (default to true)
   -- if set to false all icons will have the default icon's color
-  color_icons = true;
+  color_icons = true,
   -- globally enable default icons (default to false)
   -- will get overriden by `get_icons` option
-  default = true;
+  default = true,
 }
+
+vim.g.NvimTreeSetup = 0

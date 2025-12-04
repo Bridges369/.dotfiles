@@ -82,6 +82,8 @@ return packer.startup(function(use)
   use "williamboman/mason.nvim" -- LSP installer
   use "jose-elias-alvarez/null-ls.nvim" -- LSP diagnostics and code actions
   use "rubixninja314/vim-mcfunction" -- mcfunction sintax highlight
+  use "NelsonTLima/vim-portugol-highlight"
+  use "JunioJsv/portugol-support-vim"
 
   -- {{ COMPLETION }}
   use "hrsh7th/nvim-cmp" -- The completion plugin

@@ -1,5 +1,6 @@
 local options = {
   autoread = true,              -- read file when changed outside of viv
+  autostart = true,
   background = "dark",          -- "dark" or "light", used for highlith colors
   backup = false,               -- create a backup file
 	-- clipboard = "unnamedplus",    -- allows neovim to access the system clipboard
@@ -16,7 +17,7 @@ local options = {
   number = true,                -- set number lines
   pumheight = 10,               -- pop-up menu height
   relativenumber = true,       -- set relative numbered lines
-  scrolloff = 9,                -- minimum number of lines to keep above ande below the cursor
+  scrolloff = 25,                -- minimum number of lines to keep above ande below the cursor
   shell = "pwsh",               -- define shell
   shellcmdflag = "-NoLogo -NoProfile -ExecutionPolicy RemoteSigned -Command [Console]::InputEncoding=[Console]::OutputEncoding=[System.Text.Encoding]::UTF8;",
   shiftwidth = 2,               -- size of identation
@@ -41,4 +42,4 @@ end
 
 vim.opt.shortmess:append "c"
 
-vim.cmd("autocmd BufRead,BufNewFile *.json set filetype=jsonc")
+-- vim.cmd("autocmd BufRead,BufNewFile *.json set filetype=jsonc")
